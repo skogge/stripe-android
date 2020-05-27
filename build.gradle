@@ -6,6 +6,9 @@ buildscript {
     repositories {
         jcenter()
         google()
+        flatDir {
+            dirs 'libs'
+        }
     }
 
     dependencies {
@@ -26,6 +29,9 @@ allprojects {
     repositories {
         google()
         jcenter()
+        flatDir {
+            dirs 'libs'
+        }
     }
 
     task checkstyle(type: Checkstyle) {
